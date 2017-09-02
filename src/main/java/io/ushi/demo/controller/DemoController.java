@@ -1,4 +1,4 @@
-package io.ushi.javadoc.controller;
+package io.ushi.demo.controller;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,13 +11,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Doc主页控制类
- *
  * Created by zhouleibo on 2017/8/30.
  */
 @RestController
 @RequestMapping("/doc")
-public class DocController {
+public class DemoController {
 
     @RequestMapping(value = "/group/{id}/artifacts", method = RequestMethod.GET)
     public List<String> artifacts(@PathVariable("id") String groupId) {
